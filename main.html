@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <title>AutoZone</title>
+</head>
+
+<body>
+    <div class="fon-bg">
+        <img src="image/fon.jpg" alt="" class="fon">
+    </div>
+    <header class="header-page">
+        <div class="wrapper-header">
+            <div class="menu">
+                <a href="main.html">
+                    <h1 class="logo">
+                        <div class="logo-item"><img src="image/logo-enter.png" alt=""></div>
+                        <div class="logo-text">Auto<span style="color: #80ce0c;">Zone</span></div>
+                    </h1>
+                </a>
+                <div class="general-menu">
+                    <div class="search">
+                        <form action="#search">
+                            <input type="text" placeholder="Поиск...">
+                            <button type="submit"><img src="image/icon-search.svg" class="icon-search"></img></button>
+                        </form>
+                    </div>
+                    <div class="login">
+                        <form action="login.html">
+                            <button class="btn-general btn-login">Вход / Регистрация</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main-page">
+        <hr>
+        <div class="wrapper-main">
+            <div class="block-main_service">
+                <div class="sidebar-main">
+                    <ul class="nav-items_category">
+                        <li><a href="#" class="item-category service active">Все сервисы</a>
+                            <ul class="nav-items_subcategory modal" hidden>
+                                <li><a href="#" class="item-category item-subcategory">АвтоРемонт</a></li>
+                                <li><a href="#" class="item-category item-subcategory">АвтоРемонт гибридных</a></li>
+                                <li><a href="#" class="item-category item-subcategory">АвтоТонировка</a></li>
+                                <li><a href="#" class="item-category item-subcategory">АвтоЗвук</a></li>
+                                <li><a href="#" class="item-category item-subcategory">АвтоПокраска</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="addservice.html" class="item-category my-category" data-id-nav="carHybrid">Мои сервисы</a></li>
+                    </ul>
+                </div>
+                <div class="aside-main">
+                    <div class="general-service">
+                        <div class="service_1">
+                            <div class="sidebar-service slider-container">
+                                <div class="photo-service slider">
+                                    <img class="slide block" src="image/image_1.jpg" alt="">
+                                    <img class="slide" src="image/image_2.jpg" alt="">
+                                    <img class="slide" src="image/image_3.jpg" alt="">
+                                </div>
+                                <a onclick="plusSlides(-1)" class="prev-button">&#10094</a>
+                                <a onclick="plusSlides(1)" class="next-button">&#10095</a>
+                                <!-- <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&#10094;</button>
+                                <button class="next-button" aria-label="Посмотреть следующий слайд">&#10095</button> -->
+                            </div>
+                            <div class="aside-service">
+                                <a href="service.html" class="title-service">
+                                    <h2>FAVORIT MOTORS</h2><br>
+                                </a>
+                                <p class="text2">​Автосалон FAVORIT MOTORS KIA Юго-Запад</p>
+                                <div class="reviews">
+                                    <div class="star-reviws">
+                                        <div class="_1fkin5c" style="width: 85px;">
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="average-score">4.7</div>
+                                    <div class="quantity-reviews">34 оценки</div>
+                                </div>
+                                <div class="geolocation inf-service">
+                                    <img src="image/location-dot-solid.png" style="width: 20px;" alt="">
+                                    <span>​Аструс, Ленинский проспект, 146, Москва</span>
+                                </div>
+                                <div class="work_schedule-service inf-service">
+                                    <img src="image/clock-regular.png" alt="">
+                                    <span>Ежедневно с 8:00 до 21:00</span>
+                                </div>
+                                <div class="contact-service inf-service">
+                                    <img src="image/phone-solid.png" alt="">
+                                    <span>+7 (495) 646‒87‒51</span>
+                                </div>
+                                <div class="site-service inf-service">
+                                    <img src="image/earth-americas-solid.png" alt="">
+                                    <span><a href="#">favorit-motors.ru</a></span>
+                                </div>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="service_1">
+                            <div class="sidebar-service slider-container">
+                                <div class="photo-service slider">
+                                    <img class="slide block" src="image/image_1.jpg" alt="">
+                                    <img class="slide" src="image/image_2.jpg" alt="">
+                                    <img class="slide" src="image/image_3.jpg" alt="">
+                                </div>
+                                <a onclick="plusSlides(-1)" class="prev-button">&#10094</a>
+                                <a onclick="plusSlides(1)" class="next-button">&#10095</a>
+                                <!-- <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&#10094;</button>
+                                <button class="next-button" aria-label="Посмотреть следующий слайд">&#10095</button> -->
+                            </div>
+                            <div class="aside-service">
+                                <a href="#" class="title-service">
+                                    <h2>FAVORIT MOTORS</h2><br>
+                                </a>
+                                <p class="text2">​Автосалон FAVORIT MOTORS KIA Юго-Запад</p>
+                                <div class="reviews">
+                                    <div class="star-reviws">
+                                        <div class="_1fkin5c" style="width: 85px;">
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="average-score">4.7</div>
+                                    <div class="quantity-reviews">34 оценки</div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="subblock-service "> -->
+                                <div class="geolocation inf-service">
+                                    <img src="image/location-dot-solid.png" style="width: 20px;" alt="">
+                                    <span>​Аструс, Ленинский проспект, 146, Москва</span>
+                                </div>
+                                <div class="work_schedule-service inf-service">
+                                    <img src="image/clock-regular.png" alt="">
+                                    <span>Ежедневно с 8:00 до 21:00</span>
+                                </div>
+                                <div class="contact-service inf-service">
+                                    <img src="image/phone-solid.png" alt="">
+                                    <span>+7 (495) 646‒87‒51</span>
+                                </div>
+                                <div class="site-service inf-service">
+                                    <img src="image/earth-americas-solid.png" alt="">
+                                    <span><a href="#">favorit-motors.ru</a></span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service_1">
+                            <div class="sidebar-service slider-container">
+                                <div class="photo-service slider">
+                                    <img class="slide block" src="image/image_1.jpg" alt="">
+                                    <img class="slide" src="image/image_2.jpg" alt="">
+                                    <img class="slide" src="image/image_3.jpg" alt="">
+                                </div>
+                                <a onclick="plusSlides(-1)" class="prev-button">&#10094</a>
+                                <a onclick="plusSlides(1)" class="next-button">&#10095</a>
+                                <!-- <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&#10094;</button>
+                                <button class="next-button" aria-label="Посмотреть следующий слайд">&#10095</button> -->
+                            </div>
+                            <div class="aside-service">
+                                <a href="#" class="title-service">
+                                    <h2>FAVORIT MOTORS</h2><br>
+                                </a>
+                                <p class="text2">​Автосалон FAVORIT MOTORS KIA Юго-Запад</p>
+                                <div class="reviews">
+                                    <div class="star-reviws">
+                                        <div class="_1fkin5c" style="width: 85px;">
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="average-score">4.7</div>
+                                    <div class="quantity-reviews">34 оценки</div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="subblock-service "> -->
+                                <div class="geolocation inf-service">
+                                    <img src="image/location-dot-solid.png" style="width: 20px;" alt="">
+                                    <span>​Аструс, Ленинский проспект, 146, Москва</span>
+                                </div>
+                                <div class="work_schedule-service inf-service">
+                                    <img src="image/clock-regular.png" alt="">
+                                    <span>Ежедневно с 8:00 до 21:00</span>
+                                </div>
+                                <div class="contact-service inf-service">
+                                    <img src="image/phone-solid.png" alt="">
+                                    <span>+7 (495) 646‒87‒51</span>
+                                </div>
+                                <div class="site-service inf-service">
+                                    <img src="image/earth-americas-solid.png" alt="">
+                                    <span><a href="#">favorit-motors.ru</a></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="service_1">
+                            <div class="sidebar-service slider-container">
+                                <div class="photo-service slider">
+                                    <img class="slide block" src="image/image_1.jpg" alt="">
+                                    <img class="slide" src="image/image_2.jpg" alt="">
+                                    <img class="slide" src="image/image_3.jpg" alt="">
+                                </div>
+                                <a onclick="plusSlides(-1)" class="prev-button">&#10094</a>
+                                <a onclick="plusSlides(1)" class="next-button">&#10095</a>
+                                <!-- <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&#10094;</button>
+                                <button class="next-button" aria-label="Посмотреть следующий слайд">&#10095</button> -->
+                            </div>
+                            <div class="aside-service">
+                                <a href="#" class="title-service">
+                                    <h2>FAVORIT MOTORS</h2><br>
+                                </a>
+                                <p class="text2">​Автосалон FAVORIT MOTORS KIA Юго-Запад</p>
+                                <div class="reviews">
+                                    <div class="star-reviws">
+                                        <div class="_1fkin5c" style="width: 85px;">
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span style="width: 14px; height: 14px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 16 16" fill="#262626">
+                                                    <path
+                                                        d="M12.326 14.3l-1.145-4.92L15 6.07 9.966 5.64 8 1 6.034 5.639 1 6.07 4.819 9.38 3.674 14.3 8 11.69z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="average-score">4.7</div>
+                                    <div class="quantity-reviews">34 оценки</div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- <div class="subblock-service "> -->
+                                <div class="geolocation inf-service">
+                                    <img src="image/location-dot-solid.png" style="width: 20px;" alt="">
+                                    <span>​Аструс, Ленинский проспект, 146, Москва</span>
+                                </div>
+                                <div class="work_schedule-service inf-service">
+                                    <img src="image/clock-regular.png" alt="">
+                                    <span>Ежедневно с 8:00 до 21:00</span>
+                                </div>
+                                <div class="contact-service inf-service">
+                                    <img src="image/phone-solid.png" alt="">
+                                    <span>+7 (495) 646‒87‒51</span>
+                                </div>
+                                <div class="site-service inf-service">
+                                    <img src="image/earth-americas-solid.png" alt="">
+                                    <span><a href="#">favorit-motors.ru</a></span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+
+                    <div class="add-service">
+                        <form action="#add">
+                            <button class="btn-general btn-service"><i
+                                    class="fa-solid fa-plus"></i><span>Добавить</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/9e2c170225.js" crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dbdbdb;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.fon-bg {
+  height: 100%;
+  width: 100%;
+}
+
+.fon {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  position: fixed;
+}
+
+.header-page {
+  position: relative;
+  background: #2B2B2B;
+  height: 100px;
+  display: grid;
+  align-items: center;
+}
+
+.wrapper-main {
+  margin: 0 auto;
+  width: 1300px;
+  height: 100%;
+}
+
+.wrapper-header {
+  margin: 0 auto;
+  width: 1300px;
+  display: grid;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logo-item img {
+  margin-bottom: -8px;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 44px;
+}
+
+.general-menu {
+  display: flex;
+  align-items: center;
+}
+
+.search form {
+  width: auto;
+  height: auto;
+  float: right;
+  margin: 0 auto;
+  margin-right: 30px;
+}
+.search input {
+  width: 260px;
+  height: 52px;
+  padding-left: 15px;
+  padding-right: 50px;
+  border-radius: 42px;
+  border: 1px solid #324b4e;
+  box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: 0.3s linear;
+  font-size: 16px;
+}
+.search input:focus {
+  width: 330px;
+}
+.search button {
+  width: 45px;
+  height: 45px;
+  background: none;
+  border: none;
+  position: relative;
+  margin-top: 5px;
+  right: 60px;
+  bottom: 2px;
+}
+
+.icon-search {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-general {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background: #a2ff17;
+  border-radius: 45px;
+  border: 0;
+  padding: 10px 20px;
+}
+
+.btn-general:hover {
+  transition: 0.3s;
+  background: #80ce0c;
+  box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-general:active {
+  transition: 0s;
+  background: #78c408;
+}
+
+.main-page {
+  position: relative;
+  height: 100%;
+}
+
+.block-main_service {
+  display: flex;
+}
+
+.sidebar-main {
+  border-right: 2px solid gray;
+  width: 25%;
+  height: auto;
+}
+.sidebar-main ul {
+  list-style: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.nav-items_category {
+  position: fixed;
+  width: 16.1%;
+}
+
+.item-category {
+  display: grid;
+  align-items: center;
+  height: 45px;
+  padding-left: 10px;
+  color: #000;
+  font-size: 23px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.item-category:hover {
+  background: #d4d4d4;
+  color: #7ac20e;
+}
+
+.item-category:focus {
+  color: #7ac20e;
+  border-right: 3px solid #78c408;
+}
+
+.item-subcategory {
+  padding-left: 30px;
+}
+
+.aside-main {
+  position: relative;
+  width: 80%;
+}
+
+.block1 {
+  position: absolute;
+}
+
+.add-service {
+  position: fixed;
+  float: right;
+  right: 10%;
+  top: 93%;
+}
+
+.btn-service {
+  position: relative;
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+span, .text2, .quantity-reviews, a, .average-score, .item-category {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.service_1 {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+}
+
+.service_1:hover {
+  border-radius: 25px;
+  transition: 0.5s;
+  background: #cfcfcf;
+}
+
+.photo-service img {
+  cursor: pointer;
+  border-radius: 30px;
+  width: 85%;
+}
+
+.slide {
+  display: none;
+  height: 95%;
+}
+
+.block {
+  display: block;
+}
+
+.prev-button, .next-button, .prev-buttons, .next-buttons {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next-button, .next-buttons {
+  right: 15%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev-button:hover, .next-button:hover, .prev-buttons:hover, .next-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-container {
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.aside-service {
+  display: flex;
+  position: relative;
+  right: 65px;
+  width: 30%;
+  height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 5px;
+}
+.aside-service p {
+  position: relative;
+  color: #696969;
+  bottom: 8px;
+}
+
+.title-service {
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+}
+
+.service_1:hover .title-service {
+  color: #000;
+}
+
+.reviews {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inf-service {
+  display: flex;
+  align-items: center;
+}
+.inf-service img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+
+.widget-enter2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fio, .phone, .password, .login {
+  margin-top: 10px;
+}
+
+.button-enter_reg2 {
+  margin-top: 40px;
+}
+
+.header-lotype2 {
+  position: relative;
+  bottom: 30px;
+  width: 257px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.enter-page2 {
+  width: 500px;
+  height: 700px;
+  border-radius: 30px;
+  border: 2px solid #08C4AD;
+  display: grid;
+  align-items: center;
+}
+
+.auto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 905px;
+}
+
+.enter-page {
+  width: 500px;
+  height: 617px;
+  border-radius: 30px;
+  border: 2px solid #08C4AD;
+  display: grid;
+  align-items: center;
+}
+
+.wrapper-login {
+  font-weight: bold;
+  margin: 0 auto;
+  width: 390px;
+  height: 537px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-lotype {
+  width: 257px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget-enter {
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.enter-reg {
+  width: 271px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enter-reg a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.enter-reg .active_enter {
+  color: #78c408;
+}
+
+.login p, .password p, .fio p, .phone p {
+  font-size: 16px;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+.login input, .password input, .fio input, .phone input {
+  border: none;
+  font-size: 15px;
+  padding: 0 25px;
+  border-radius: 50px;
+  width: 100%;
+  height: 61px;
+  background: #C1C1C1;
+}
+.login input:focus, .password input:focus, .fio input:focus, .phone input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 2px 4px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enter_reg {
+  background: #7AC20E;
+  color: #FFF;
+  height: 61px;
+  width: 100%;
+}
+
+.service-page {
+  background-image: url(../image/fon-service1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1024px;
+  width: 100%;
+}
+
+.wrapper-service {
+  margin: 0 auto;
+  width: 1090px;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 52px 16px;
+  font-weight: bold;
+  font-size: 20px;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.prev {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row {
+  margin: 0 auto;
+  width: 92%;
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  margin: 0 auto;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
